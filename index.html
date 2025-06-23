@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analyzátor Sily Hesla</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔐</text></svg>">
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/"
+  }
+}
+</script>
+<style>
+  /* For consistent selection highlight across browsers if Tailwind's selection variants aren't picked up directly in body tag */
+  ::selection {
+    background-color: #6366f1; /* indigo-500 */
+    color: white;
+  }
+  ::-moz-selection { /* Firefox */
+    background-color: #6366f1;
+    color: white;
+  }
+</style>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-slate-100">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

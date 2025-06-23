@@ -1,0 +1,6 @@
+{
+  "name": "Password Strength Analyzer",
+  "description": "A web application to assess password strength and estimate the time it might take to crack it. Provides feedback and suggestions for stronger passwords.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
