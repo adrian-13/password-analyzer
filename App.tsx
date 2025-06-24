@@ -75,7 +75,7 @@ const App: React.FC = () => {
       <div className="w-full max-w-lg space-y-8 mt-8 mb-8">
         <div className="bg-white/90 backdrop-blur-lg shadow-2xl rounded-xl p-6 md:p-10 space-y-6">
           <header className="relative">
-            <div className="text-center">
+            <div className="text-center pr-12 md:pr-14"> {/* Added pr-12 md:pr-14 here */}">
               <h1 className="text-3xl md:text-4xl font-bold text-slate-800">
                 Analyzátor Sily Hesla <span role="img" aria-label="lock icon" className="inline-block">🔐</span>
               </h1>
