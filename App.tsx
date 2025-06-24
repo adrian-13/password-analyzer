@@ -123,6 +123,9 @@ const App: React.FC = () => {
           <p className="text-xs text-slate-500 mt-2">
             Vytvorené s <span role="img" aria-label="love" className="text-red-500">❤️</span> pomocou React, TypeScript a Tailwind CSS.
           </p>
+          <p className="text-xs text-slate-500 mt-1">
+            <strong className="font-medium text-slate-600">IT Riešenia PD</strong>
+          </p>
         </footer>
       </div>
       <InfoModal 
