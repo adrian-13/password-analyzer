@@ -74,8 +74,8 @@ const App: React.FC = () => {
     <div className="min-h-screen flex flex-col items-center justify-start p-4 bg-gradient-to-tr from-sky-100 via-indigo-100 to-purple-100 selection:bg-indigo-500 selection:text-white">
       <div className="w-full max-w-lg space-y-8 mt-8 mb-8">
         <div className="bg-white/90 backdrop-blur-lg shadow-2xl rounded-xl p-6 md:p-10 space-y-6">
-          <header className="flex justify-between items-start">
-            <div className="flex-grow text-center">
+          <header className="relative">
+            <div className="text-center">
               <h1 className="text-3xl md:text-4xl font-bold text-slate-800">
                 Analyzátor Sily Hesla <span role="img" aria-label="lock icon" className="inline-block">🔐</span>
               </h1>
@@ -85,7 +85,7 @@ const App: React.FC = () => {
             </div>
             <button
               onClick={toggleInfoModal}
-              className="p-2 text-slate-500 hover:text-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 rounded-full ml-3 flex-shrink-0"
+              className="absolute top-0 right-0 p-2 text-slate-500 hover:text-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 rounded-full"
               aria-label="Informácie o aplikácii"
               title="Informácie o aplikácii"
             >
@@ -105,12 +105,6 @@ const App: React.FC = () => {
                 hibpError={hibpError}
                 isPasswordEntered={password.length > 0}
               />
-            )}
-            {/* Placeholder for when no password is entered yet, shown only if analysisResult is not yet set by initial empty password analysis */}
-            {!password && analysisResult && analysisResult.strengthText === "Zadajte heslo" && (
-               <div className="text-center p-6 bg-slate-50/70 shadow-md rounded-lg">
-                 <p className="text-slate-500">Zadajte heslo vyššie pre zobrazenie analýzy.</p>
-               </div>
             )}
           </main>
         </div>
