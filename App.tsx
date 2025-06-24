@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useCallback } from 'react';
 import PasswordInput from './components/PasswordInput';
 import StrengthFeedback from './components/StrengthFeedback';
@@ -22,6 +23,7 @@ const App: React.FC = () => {
   };
 
   useEffect(() => {
+    // Always perform analysis, even for an empty string, to get initial state for StrengthFeedback
     const result = analyzePassword(password);
     setAnalysisResult(result);
   }, [password]);
@@ -73,9 +75,9 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-start p-4 bg-gradient-to-tr from-sky-100 via-indigo-100 to-purple-100 selection:bg-indigo-500 selection:text-white">
       <div className="w-full max-w-lg space-y-8 mt-8 mb-8">
-        <div className="bg-white/90 backdrop-blur-lg shadow-2xl rounded-xl p-6 md:p-6 space-y-6">
+        <div className="bg-white/90 backdrop-blur-lg shadow-2xl rounded-xl p-6 md:p-10 space-y-6">
           <header>
-            <div className="flex justify-end mb-1">
+            <div className="flex justify-end mb-1"> {/* Changed mb-2 to mb-1 */}
                 <button
                   onClick={toggleInfoModal}
                   className="p-1 text-slate-500 hover:text-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-1 rounded-full"
