@@ -73,15 +73,12 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-start p-4 bg-gradient-to-tr from-sky-100 via-indigo-100 to-purple-100 selection:bg-indigo-500 selection:text-white">
       <div className="w-full max-w-lg space-y-8 mt-8 mb-8">
-        <div className="bg-white/90 backdrop-blur-lg shadow-2xl rounded-xl p-6 md:p-10 space-y-6">
+        <div className="bg-white/90 backdrop-blur-lg shadow-2xl rounded-xl p-6 md:p-6 space-y-6">
           <header>
-            <div className="text-center">
-              <h1 className="text-3xl md:text-4xl font-bold text-slate-800 flex items-center justify-center">
-                Analyzátor Sily Hesla
-                <span role="img" aria-label="lock icon" className="inline-block ml-2">🔐</span>
+            <div className="flex justify-end mb-1">
                 <button
                   onClick={toggleInfoModal}
-                  className="ml-3 p-1 text-slate-500 hover:text-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-1 rounded-full"
+                  className="p-1 text-slate-500 hover:text-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-1 rounded-full"
                   aria-label="Informácie o aplikácii"
                   title="Informácie o aplikácii"
                 >
@@ -89,6 +86,11 @@ const App: React.FC = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
                   </svg>
                 </button>
+            </div>
+            <div className="text-center">
+              <h1 className="text-3xl md:text-4xl font-bold text-slate-800">
+                Analyzátor Sily Hesla
+                <span role="img" aria-label="lock icon" className="inline-block ml-2">🔐</span>
               </h1>
               <p className="text-slate-600 mt-2 text-sm md:text-base">
                 Zistite, aké silné je vaše heslo, ako ho vylepšiť, a či nebolo nájdené v únikoch dát.
