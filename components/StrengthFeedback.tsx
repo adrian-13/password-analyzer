@@ -123,7 +123,7 @@ const StrengthFeedback: React.FC<StrengthFeedbackProps> = ({
         </div>
       )}
       {/* Overriding suggestion if password is pwned */}
-      {hibpPwnedCount && hibpPwnedCount > 0 && (
+      {hibpPwnedCount > 0 && (
          <div className="pt-4 mt-4 border-t border-slate-200/75">
           <h3 className="text-md font-semibold text-slate-800 mb-2">Dôležité odporúčanie:</h3>
             <p className="text-sm text-purple-700 font-semibold">
