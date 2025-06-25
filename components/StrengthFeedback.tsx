@@ -127,7 +127,7 @@ const StrengthFeedback: React.FC<StrengthFeedbackProps> = ({
          <div className="pt-4 mt-4 border-t border-slate-200/75">
           <h3 className="text-md font-semibold text-slate-800 mb-2">Dôležité odporúčanie:</h3>
             <p className="text-sm text-purple-700 font-semibold">
-              Keďže toto heslo bolo nájdené v únikoch dát, je extrémne dôležité ho **nikde nepoužívať** a zmeniť ho všade, kde ste ho mohli použiť.
+              Keďže toto heslo bolo nájdené v únikoch dát, je extrémne dôležité ho <strong>nikde nepoužívať</strong> a zmeniť ho všade, kde ste ho mohli použiť.
               Vytvorte si úplne nové, unikátne a silné heslo.
             </p>
          </div>
