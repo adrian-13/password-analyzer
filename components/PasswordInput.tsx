@@ -13,7 +13,7 @@ const PasswordInput: React.FC<PasswordInputProps> = ({ value, onChange }) => {
         Zadajte heslo:
       </label>
       <input
-        type="text" // Using text to allow users to see what they type for immediate feedback
+        type="password" // Using text to allow users to see what they type for immediate feedback
         id="passwordInput"
         value={value}
         onChange={(e) => onChange(e.target.value)}
